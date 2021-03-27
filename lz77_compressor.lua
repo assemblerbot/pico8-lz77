@@ -60,7 +60,7 @@ function lz77_comp(x0,y0,w,h,vget)
 	local pixels={}
 	for y=0,h-1 do
 		for x=0,w-1 do
-			add(pixels,vget(x,y))
+			add(pixels,vget(x0+x,y0+y))
 		end
 	end
 	
